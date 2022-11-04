@@ -1,0 +1,40 @@
+var bangla = 60
+var eng = 70
+var math = 80
+var science = 90
+fun main() {
+    when (math){
+        in 80..100 -> println("A+ in Math")
+        in 70..79 -> println("B in Math")
+        in 60..69 -> println("C in Math") 
+        in 50..59 -> println("D in Math")
+        else -> println("not passed in Math")
+    }
+    when (bangla){
+        in 80..100 -> println("A+ in Bangla")
+        in 70..79 -> println("B in Bangla")
+        in 60..69 -> println("C in Bangla") 
+        in 50..59 -> println("D in Bangla")
+        else -> println("not passed in Bangla")
+    }
+    when (eng){
+        in 80..100 -> println("A+ in English")
+        in 70..79 -> println("B in English")
+        in 60..69 -> println("C in English") 
+        in 50..59 -> println("D in English")
+        else -> println("not passed in English")
+    }
+    when (science){
+        in 80..100 -> println("A+ in Science")
+        in 70..79 -> println("B in Science")
+        in 60..69 -> println("C in Science") 
+        in 50..59 -> println("D in Science")
+        else -> println("not passed in Science")
+    }
+    var avarage = ((bangla + math + eng + science)/4)
+    println("Avarage is " + avarage)
+    if (avarage <= 60){
+         println("Try harder")
+    }
+    else
+    println("Good Job")
